@@ -1,0 +1,139 @@
+body {
+  font-family: "Roboto Mono", monospace;
+  padding: 4vh 3vw;
+  margin: 0;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: min-content auto min-content;
+}
+
+body:has(.dark:checked) {
+  background: #171717;
+  color: white;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1vh 2vw;
+}
+
+.brand {
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 0.15rem;
+  font-size: 4rem;
+  height: 100%;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.socials {
+  display: flex;
+  height: 100%;
+  margin-left: 0;
+}
+
+.vue {
+  background-image: initial !important;
+  background-color: rgb(21, 150, 125) !important;
+}
+
+.vue:hover::after,
+.vue:focus::after,
+.vue:hover::before,
+.vue:focus::before {
+  background-image: initial !important;
+  background-color: rgb(9, 61, 50) !important;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  padding: 2vh 3vw;
+}
+
+footer > p {
+  margin: 0;
+}
+
+.ThemeToggle {
+  margin-left: auto;
+  width: 1.55rem;
+  height: 1.55rem;
+  border-radius: 99em;
+}
+
+.dark {
+  position: absolute;
+  opacity: 0;
+  top: -9999em;
+}
+
+.toggle {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.toggle-handle-icon {
+  position: absolute;
+  cursor: pointer;
+  padding: 0 !important;
+  align-self: center;
+}
+
+.ThemeToggle:has(.dark:checked) .bxs-sun {
+  visibility: hidden;
+}
+
+.ThemeToggle:not(:has(.dark:checked)) .bxs-moon {
+  visibility: hidden;
+}
+
+.social {
+  cursor: pointer;
+  padding: 0 4px;
+  align-self: center;
+}
+.social:hover,
+.social:focus {
+  -webkit-animation: glitch 200ms infinite;
+  animation: glitch 200ms infinite;
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: 5px 4px #cc0f39, -5px -6px #0ffbf9;
+  }
+  25% {
+    text-shadow: -5px -6px #cc0f39, 5px 4px #0ffbf9;
+  }
+  50% {
+    text-shadow: 5px -4px #cc0f39, -8px 4px #0ffbf9;
+  }
+  75% {
+    text-shadow: -8px -4px #cc0f39, -5px -4px #0ffbf9;
+  }
+  100% {
+    text-shadow: -5px 0 #cc0f39, 5px -4px #0ffbf9;
+  }
+}
+
+@media (min-width: 640px) {
+  header {
+    flex-direction: row;
+    align-items: start;
+  }
+  .socials {
+    margin-left: auto;
+  }
+}

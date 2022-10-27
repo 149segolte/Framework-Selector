@@ -1,0 +1,160 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  overflow-y: hidden;
+}
+
+.apps {
+  padding: 4% 5%;
+  height: 100%;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.apps::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.listing-apps {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  letter-spacing: -5px; /*fix bug ff PC*/
+  font-family: "source_sans_probold";
+}
+
+.listing-apps li {
+  display: inline-block;
+  vertical-align: top;
+  letter-spacing: normal;
+  list-style: none;
+  margin: 0 0 1em 1em;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4),
+    -2px -2px 3px 0 rgba(0, 0, 0, 0.7) inset;
+}
+
+.listing-apps a {
+  display: block;
+  position: relative;
+  padding: 0.2em;
+  top: 0;
+  left: 0;
+  width: 2.7em;
+  height: 2.7em;
+  background: #666;
+  color: #fff;
+  font-size: 4em;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+}
+.listing-apps a:hover,
+.listing-apps a:focus {
+  left: -10px;
+  top: -10px;
+  box-shadow: none;
+}
+.listing-apps a:hover:before,
+.listing-apps a:focus:before {
+  height: 10px;
+}
+.listing-apps a:hover:after,
+.listing-apps a:focus:after {
+  width: 10px;
+}
+
+.listing-apps a:hover:after,
+.listing-apps a:focus:after,
+.listing-apps a:hover:before,
+.listing-apps a:focus:before {
+  background: #333;
+}
+
+.listing-apps a:after,
+.listing-apps a:before {
+  content: "";
+  position: absolute;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+}
+
+.listing-apps a:before {
+  width: 100%;
+  height: 0;
+  left: 5px;
+  top: 100%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+  transform: skew(45deg, 0deg);
+  -webkit-transform: skew(45deg, 0deg);
+}
+
+.listing-apps a:after {
+  width: 0;
+  height: 100%;
+  left: 100%;
+  top: 5px;
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.4);
+  transform: skew(0deg, 45deg);
+  -webkit-transform: skew(0deg, 45deg);
+}
+
+.listing-apps span {
+  display: block;
+  margin: -1.2em 0 0 0.2em;
+}
+.listing-apps .first-letter {
+  margin: 0;
+  display: inline-block;
+}
+.listing-apps .name {
+  font-family: "source_sans_proregular";
+  font-size: 0.3em;
+}
+
+@media screen and (max-width: 48px) {
+  .apps {
+    margin: 10% 5%;
+  }
+  .listing-apps a {
+    font-size: 3em;
+  }
+  .listing-apps span + span {
+    font-size: 0.32em;
+  }
+  .listing-apps a:hover,
+  .listing-apps a:focus {
+    left: -5px;
+    top: -5px;
+  }
+  .listing-apps a:hover:before,
+  .listing-apps a:focus:before {
+    height: 5px;
+  }
+  .listing-apps a:hover:after,
+  .listing-apps a:focus:after {
+    width: 5px;
+  }
+  .listing-apps a:before {
+    left: 3px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+  }
+  .listing-apps a:after {
+    top: 3px;
+    box-shadow: 3px 0 5px rgba(0, 0, 0, 0.4);
+  }
+}
+@media screen and (max-width: 350px) {
+  .listing-apps a {
+    width: 2.5em;
+    height: 2.5em;
+    font-size: 2.8em;
+  }
+}
