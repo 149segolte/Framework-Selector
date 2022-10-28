@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" width="500" height="500" xmlns="http://www.w3.org/2000/svg">
+  <g transform="matrix(0.911131, 0, 0, 0.911131, 18.507574, 16.750458)">
+    <path d="M 254.071 0 L 475.774 128 L 475.774 384 L 254.071 512 L 32.369 384 L 32.369 128 L 254.071 0 Z" fill="#673ab8"/>
+    <ellipse stroke-width="16px" rx="75" ry="196" fill="none" stroke="white" transform="matrix(0.608761, 0.793353, -0.793353, 0.608761, 254.070999, 255.999969)"/>
+    <ellipse stroke-width="16px" rx="75" ry="196" fill="none" stroke="white" transform="matrix(0.608761, -0.793353, 0.793353, 0.608761, 254.070999, 255.999969)"/>
+    <circle cx="254.071" cy="256" r="34" fill="white"/>
+  </g>
+</svg>

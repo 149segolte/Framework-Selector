@@ -29,7 +29,6 @@ main {
   padding: 0;
   text-align: center;
   letter-spacing: -5px; /*fix bug ff PC*/
-  font-family: "source_sans_probold";
 }
 
 .listing-apps li {
@@ -61,6 +60,7 @@ main {
   left: -10px;
   top: -10px;
   box-shadow: none;
+  background: #333;
 }
 .listing-apps a:hover:before,
 .listing-apps a:focus:before {
@@ -75,15 +75,15 @@ main {
 .listing-apps a:focus:after,
 .listing-apps a:hover:before,
 .listing-apps a:focus:before {
-  background: #333;
+  background: #222;
 }
 
 .listing-apps a:after,
 .listing-apps a:before {
   content: "";
   position: absolute;
-  transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
+  /* transition: all 0.3s ease; */
+  /* -webkit-transition: all 0.3s ease; */
 }
 
 .listing-apps a:before {
@@ -106,15 +106,7 @@ main {
   -webkit-transform: skew(0deg, 45deg);
 }
 
-.listing-apps span {
-  display: block;
-  margin: -1.2em 0 0 0.2em;
-}
-.listing-apps .first-letter {
+.name {
   margin: 0;
-  display: inline-block;
-}
-.listing-apps .name {
-  font-family: "source_sans_proregular";
-  font-size: 0.3em;
+  font-size: 2rem;
 }

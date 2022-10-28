@@ -45,19 +45,6 @@ a {
   margin-left: 0;
 }
 
-.vue {
-  background-image: initial !important;
-  background-color: rgb(21, 150, 125) !important;
-}
-
-.vue:hover::after,
-.vue:focus::after,
-.vue:hover::before,
-.vue:focus::before {
-  background-image: initial !important;
-  background-color: rgb(9, 61, 50) !important;
-}
-
 footer {
   display: flex;
   align-items: center;
@@ -104,6 +91,28 @@ footer > p {
   visibility: hidden;
 }
 
+.app-tile > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.icon {
+  width: 6rem;
+  aspect-ratio: 1/1;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+}
+
+.app-tile:hover .icon,
+.app-tile:focus .icon {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
 .social {
   cursor: pointer;
   padding: 0 4px;
@@ -141,4 +150,18 @@ footer > p {
   .socials {
     margin-left: auto;
   }
+}
+@media (min-width: 800px) {
+  .listing-apps {
+    margin: 0 5%;
+  }
+}
+
+.black-svg {
+  color: rgb(70, 70, 70);
+}
+
+.app-tile:hover .black-svg,
+.app-tile:focus .black-svg {
+  color: rgb(0, 0, 0);
 }
