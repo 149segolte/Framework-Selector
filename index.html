@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="preload"
-      href="https://fonts.googleapis.com/css?family=Bebas Neue|Roboto Mono"
+      href="https://fonts.googleapis.com/css?family=Bebas Neue|Roboto Mono&display=swap"
       as="style"
       onload="this.onload=null;this.rel='stylesheet'"
     />
     <noscript
       ><link
         rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Bebas Neue|Roboto Mono"
+        href="https://fonts.googleapis.com/css?family=Bebas Neue|Roboto Mono&display=swap"
     /></noscript>
     <link href="ynh.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
@@ -198,11 +198,17 @@
     <footer>
       <p>&copy; Copyright 2022, 149segolte</p>
       <div class="ThemeToggle">
-        <input type="checkbox" id="ThemeToggle" class="dark" checked />
         <label class="toggle" for="ThemeToggle">
           <i class="toggle-handle-icon bx bxs-sun bx-sm social"></i>
           <i class="toggle-handle-icon bx bxs-moon bx-sm social"></i>
         </label>
+        <input
+          type="checkbox"
+          id="ThemeToggle"
+          class="dark"
+          checked
+          aria-label="Theme toggle"
+        />
       </div>
     </footer>
   </body>
