@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg viewBox="0 0 500 500" width="500" height="500" xmlns="http://www.w3.org/2000/svg">
-  <path fill="#00e8ff" d="M 170 290 L 210 170 L 390.001 350.001 L 330 450 L 250 370 L 210 370"/>
-  <path fill="#283198" d="M 250 370 L 250 210 L 330 130 L 330 290 M 90 370 L 170 450 L 210 370 L 170 290 L 130 290"/>
-  <path fill="#324fff" d="M 170 290 L 170 130 L 250 50 L 250 210 M 330 450 L 330 290 L 410 210 L 410 370 M 90 370 L 90 210 L 170 290"/>
-  <path fill="#0ff" d="M 170 450 L 170 290 L 250 370"/>
-</svg>
